@@ -1,7 +1,7 @@
 import React from 'react';
 import './navbar.css';
 import { NavLink } from 'react-router-dom';
-import logoDesign from '../../assets/HRnet_logo-design.jpg';
+import logo from '../../assets/logo.png';
 import logoBrand from '../../assets/HRnet_logo-brand.jpg';
 import icoList from '../../assets/ico-list.png';
 import icoAdd from '../../assets/ico-user-add.jpg';
@@ -13,8 +13,8 @@ const Navbar = () => {
       <nav aria-labelledby='nav-title'>
         <div tabIndex="0" aria-label="Wealth Health logo" className="nav-item nav-brand">
           <img
-            className="nav-logo--design"
-            src={logoDesign}
+            className="nav-logo"
+            src={logo}
             alt="Wealth Health logo design"
           />
           <img

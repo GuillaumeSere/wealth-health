@@ -11,13 +11,13 @@
   --tertiary: #cad3ae;
   --disabled: #eef1e3;
   --light: #fff;
-  --bg: #fafbf9;
+  --bg: #929292;
   --error: #ff6060;
 }
 
 /* BODY */
 body {
-  background: #fafbf9;
+  background: var(--bg);
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   color: var(--dark);
@@ -67,6 +67,7 @@ h3 {
 }
 
 #page-title {
+  color: var(--dark);
   width: fit-content;
   margin: 2rem auto;
   padding: 0.5rem;

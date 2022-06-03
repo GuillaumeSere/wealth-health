@@ -60,7 +60,7 @@ const Form = () => {
           alt="add employee icon"
         />
   
-        {INPUT_DATA.map((data, index) => {console.log(data)})};
+        {INPUT_DATA.map((data, index) => {console.log(data)})}
         {INPUT_DATA.map((data, index) => (
           <Input
             key={index}
@@ -82,7 +82,7 @@ const Form = () => {
           <legend className="form-newEmployee--addressGroup">Address</legend>
         </fieldset>
   
-        {DROPDOWN_DATA.map((data, index) => {console.log(data)})};  
+        {DROPDOWN_DATA.map((data, index) => {console.log(data)})} 
         {DROPDOWN_DATA.map((data, index) => (
           <Dropdown
             key={index}
