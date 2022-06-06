@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import logoBrand from '../../assets/HRnet_logo-brand.jpg';
 import icoList from '../../assets/ico-list.png';
-import icoAdd from '../../assets/ico-user-add.jpg';
+import icoAdd from '../../assets/User-add-05.png';
 
 
 const Navbar = () => {

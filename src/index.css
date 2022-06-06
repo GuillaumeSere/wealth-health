@@ -5,11 +5,11 @@
 /* COLORS */
 :root {
   --dark: #483e37;
-  --primary: #6c6753;
-  --secondary: #8d9379;
+  --primary: #999379;
+  --secondary: #9aa674;
   --tertiary-constrast: #bec7a3;
-  --tertiary: #cad3ae;
-  --disabled: #eef1e3;
+  --tertiary: #c1d488;
+  --disabled: #ccde8c;
   --light: #fff;
   --bg: #929292;
   --error: #ff6060;
@@ -34,7 +34,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--primary) !important;
+  background-color: var(--secondary) !important;
 }
 
 /* TITLES */
@@ -67,7 +67,7 @@ h3 {
 }
 
 #page-title {
-  color: var(--dark);
+  color: white;
   width: fit-content;
   margin: 2rem auto;
   padding: 0.5rem;
