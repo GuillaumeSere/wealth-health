@@ -54,6 +54,7 @@
   .table-main--list {
     table-layout: auto;
     width: 100%;
+    border-color: var(--dark);
   }
   
   .table-main--list thead :first-child :first-child {
@@ -73,8 +74,7 @@
   }
   
   .table-main--list th {
-    padding: 0.25rem;
-    /* background-color: var(--dark); */
+    padding: 0.25rem; 
     background-color: var(--primary);
     color: var(--light);
   }
@@ -118,7 +118,7 @@
   }
   
   .table-main--list tbody {
-    font-weight: 100;
+    background-color: white;
   }
   
   /* even = 1/2 row */
@@ -163,7 +163,7 @@
   .table-footer--pageIndex {
     padding: 0.25rem;
     border-radius: 0.25rem;
-    color: var(--primary);
+    color: var(--dark);
   }
   
   .table-nav--btn {

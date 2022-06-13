@@ -138,7 +138,7 @@ export default function Table() {
         <h3
           tabIndex="0"
           className="table-header--title"
-        >{`currently ${employeesList.length} employees`}</h3>
+        >{` ${employeesList.length} employees`}</h3>
         <TableFilter
           className="table-header--search"
           id="search"
