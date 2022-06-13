@@ -30,6 +30,29 @@ export const setAttributes = (element, attributes) => {
     }
   };
 
+  /**
+ * Get many elements by their common classname
+ * @param   {[type]}  tag    [tag description]
+ * @return  {object}  html   [nodes collection]
+ */
+export const getTags = (tag) => {
+    return [...document.getElementsByTagName(tag)];
+  };
+  
+  /**
+   * Get many nested elements by their common tag
+   *
+   * @param   {string}  tag1   [tag1 name]
+   * @param   {number}  index  [index]
+   * @param   {string}  tag2   [tag2 name]
+   * @return  {object}  html   [nodes collection]
+   */
+  export const getNestedTags = (tag1, index, tag2) => {
+    return [
+      ...document.getElementsByTagName(tag1)[index].getElementsByTagName(tag2),
+    ];
+  };
+
 
 
   

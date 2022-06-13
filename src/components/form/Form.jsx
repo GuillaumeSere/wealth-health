@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import INPUT_DATA from '../../data/INPUT_DATA.json';
 import DROPDOWN_DATA from '../../data/DROPDOWN_DATA.json';
+//import EMPLOYEES_LIST from '../../data/MOCK_DATA.json';
 import icoAdd from '../../assets/ico-user-add.jpg';
 import './form.css';
-import Input from '../input/Input';
-import Dropdown from '../dropdown/Dropdown';
+import Input from '../Input/Input';
+import Dropdown from '../Dropdown/Dropdown';
 
-const Form = () => {
+/**
+ * Form
+ * @returns {Reactnode}  jsx injected in DOM
+ */
+export default function Form() {
 
     const initialState = {
         firstName: '',
@@ -20,8 +26,8 @@ const Form = () => {
         department: '',
       };
 
-    const [newEmployee, setNewEmployee] = useState(initialState); 
-
+    const [newEmployee, setNewEmployee] = useState(initialState);
+     
     
   // ON CHANGE
   const handleChange = (e) => {
@@ -37,6 +43,7 @@ const Form = () => {
     e.preventDefault();
 
     // update data
+    employeesList = employeesList || [];
     employeesList.push(newEmployee);
 
     // complete / correct data
@@ -60,7 +67,6 @@ const Form = () => {
           alt="add employee icon"
         />
   
-        {INPUT_DATA.map((data, index) => {console.log(data)})}
         {INPUT_DATA.map((data, index) => (
           <Input
             key={index}
@@ -82,7 +88,6 @@ const Form = () => {
           <legend className="form-newEmployee--addressGroup">Address</legend>
         </fieldset>
   
-        {DROPDOWN_DATA.map((data, index) => {console.log(data)})} 
         {DROPDOWN_DATA.map((data, index) => (
           <Dropdown
             key={index}
@@ -106,5 +111,3 @@ const Form = () => {
       </form>
     );
 };
-
-export default Form;

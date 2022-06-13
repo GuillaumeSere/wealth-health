@@ -119,7 +119,7 @@
   .form-newEmployee--submit {
     display: block;
     margin: 2rem auto 0;
-    width: fit-content;
+    width: 100px;
     padding: 10px;
     font-size: 1rem;
     font-weight: bold;
@@ -127,6 +127,7 @@
     border-radius: 0.5rem;
     background-color: var(--tertiary);
     color: var(--light);
+    cursor: pointer;
   }
   
   .form-newEmployee--submit:disabled,
