@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import INPUT_DATA from '../../data/INPUT_DATA.json';
 import DROPDOWN_DATA from '../../data/DROPDOWN_DATA.json';
-//import EMPLOYEES_LIST from '../../data/MOCK_DATA.json';
+import EMPLOYEES_LIST from '../../data/MOCK_DATA.json';
 import icoAdd from '../../assets/ico-user-add.jpg';
 import './form.css';
 import Input from '../Input/Input';
@@ -36,7 +36,7 @@ export default function Form() {
 
   // GET DATA
   let employeesList =
-    JSON.parse(window.localStorage.getItem('employeesList'));
+    JSON.parse(window.localStorage.getItem('employeesList')) || EMPLOYEES_LIST;
 
   // ON SUBMIT
   const handleSubmit = (e) => {

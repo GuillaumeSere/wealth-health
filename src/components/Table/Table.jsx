@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { useTable, useSortBy, useGlobalFilter, usePagination } from 'react-table';
-//import EMPLOYEES_LIST from '../../data/MOCK_DATA.json';
+import EMPLOYEES_LIST from '../../data/MOCK_DATA.json';
 import { TABLE_COLUMNS } from './tableColumns';
 import TableFilter from './TableFilter';
 import './table.css';
@@ -12,7 +12,7 @@ import './table.css';
 export default function Table() {
   // GET DATA
   let employeesList =
-    JSON.parse(window.localStorage.getItem('employeesList'));
+    JSON.parse(window.localStorage.getItem('employeesList')) || EMPLOYEES_LIST;
 
   // useMEMO HOOK to avoid re-rendering until the data changes
   const columns = useMemo(() => TABLE_COLUMNS, []);
