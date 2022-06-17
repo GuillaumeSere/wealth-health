@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import INPUT_DATA from '../../data/INPUT_DATA.json';
 import DROPDOWN_DATA from '../../data/DROPDOWN_DATA.json';
 import EMPLOYEES_LIST from '../../data/MOCK_DATA.json';
 import icoAdd from '../../assets/ico-user-add.jpg';
+import close from '../../assets/close.png';
 import './form.css';
 import Input from '../Input/Input';
 import Dropdown from '../Dropdown/Dropdown';
+import Modal from 'react-modal';
 
 /**
  * Form
@@ -27,6 +28,31 @@ export default function Form() {
       };
 
     const [newEmployee, setNewEmployee] = useState(initialState);
+
+    const [modalIsOpen, setIsOpen] = useState(false);
+
+// MODAL
+function openModal() {
+    setIsOpen(true);
+    }
+
+function closeModal() {
+setIsOpen(false);
+}
+
+    const customStyles = {
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        width: '400px',
+        height: '300px',
+        background: '#f2f2f2',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+    },
+    };  
      
     
   // ON CHANGE
@@ -57,6 +83,7 @@ export default function Form() {
     // reset form
     setNewEmployee({ ...newEmployee }, e.target.reset());
 
+    openModal();
   };
 
     return (
@@ -107,7 +134,19 @@ export default function Form() {
         >
           Save
         </button>
-  
+
+        <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+        ariaHideApp={false}
+        >
+         <button onClick={closeModal}>
+            <img src={close} className="modal-close" alt="close modal" />
+        </button>
+        <div className="modal-text">Employee Created</div>
+      </Modal>
+
       </form>
     );
 };

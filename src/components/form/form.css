@@ -68,7 +68,7 @@
     outline: none;
     border-bottom: 2px solid var(--tertiary);
     border-radius: 0.25rem 0.25rem 0 0;
-    color: var(--tertiary-constrast);
+    color: grey;
     font-size: 1rem;
     font-weight: 100;
   }
@@ -137,6 +137,17 @@
     background-color: var(--disabled);
     color: var(--tertiary);
     cursor: not-allowed;
+  }
+
+  /* MODAL */
+  .modal-close{
+    width: 30px;
+    margin-left: 350px;
+  }
+
+  .modal-text{
+    text-align: center;
+    font-size: 30px;
   }
   
   /* ADAPTATIVE */
