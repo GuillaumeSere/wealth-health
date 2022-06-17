@@ -50,7 +50,9 @@ setIsOpen(false);
         height: '300px',
         background: '#f2f2f2',
         marginRight: '-50%',
+        border: 'none',
         transform: 'translate(-50%, -50%)',
+        boxShadow: '0 0 0 1.5px var(--dark)',
     },
     };  
      
@@ -144,7 +146,8 @@ setIsOpen(false);
          <button onClick={closeModal}>
             <img src={close} className="modal-close" alt="close modal" />
         </button>
-        <div className="modal-text">Employee Created</div>
+        <div className="modal-text">Employee Created</div><br/>
+        <span>👍</span>
       </Modal>
 
       </form>
