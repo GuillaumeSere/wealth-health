@@ -147,7 +147,7 @@ setIsOpen(false);
             <img src={close} className="modal-close" alt="close modal" />
         </button>
         <div className="modal-text">Employee Created</div><br/>
-        <span>👍</span>
+        <span className='span-icon'>👍</span>
       </Modal>
 
       </form>
