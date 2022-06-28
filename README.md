@@ -7,6 +7,10 @@ Ancienne application qui utilise jQuery côté front end ce qui entraîne des bu
 # Ressource
 
 - [Repo HRnet à convertir](https://github.com/OpenClassrooms-Student-Center/P12_Front-end)
+- [Issue sur les sélecteurs de date](https://github.com/OpenClassrooms-Student-Center/P12_Front-end/issues/1)
+- [Issue sur les tableaux](https://github.com/OpenClassrooms-Student-Center/P12_Front-end/issues/2)
+- [Issue de fenêtres modales](https://github.com/OpenClassrooms-Student-Center/P12_Front-end/issues/3)
+- [Issue sur le menus déroulant](https://github.com/OpenClassrooms-Student-Center/P12_Front-end/issues/4)
 
 
 
