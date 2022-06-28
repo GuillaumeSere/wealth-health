@@ -19,6 +19,13 @@ Ancienne application qui utilise jQuery côté front end ce qui entraîne des bu
 - [Plugin de menu déroulant](https://github.com/jquery/jquery-ui/blob/main/ui/widgets/selectmenu.js)
 - [Plugin de tables de données](https://github.com/DataTables/DataTables)
 
+# Livrable
+
+- Un lien du repo GitHub contenant le code source du plugin Jquery converti en ReactJS
+- Un lien vers la bibilothèque React convertie plubliée sur npm ou GitHub Packages dans le README
+- Un second repo Github contenant le code source de l'application HRnet converti en React
+- Un rapport de perfomance LightHouse de HRnet fonctionnant avant et après conversion de la biblothèque 
+
 
 
 
