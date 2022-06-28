@@ -6,6 +6,8 @@ Ancienne application qui utilise jQuery côté front end ce qui entraîne des bu
 
 # Ressource
 
+- [Repo HRnet à convertir](https://github.com/OpenClassrooms-Student-Center/P12_Front-end)
+
 
 
 
