@@ -14,10 +14,10 @@ Ancienne application qui utilise jQuery côté front end ce qui entraîne des bu
 
 # Liste des plugins jQuery à convertir
 
--[Plugin de sélection de date](https://github.com/xdan/datetimepicker)
--[Plugin de fenêtre modale](https://github.com/kylefox/jquery-modal)
--[Plugin de menu déroulant](https://github.com/jquery/jquery-ui/blob/main/ui/widgets/selectmenu.js)
--[Plugin de tables de données](https://github.com/DataTables/DataTables)
+- [Plugin de sélection de date](https://github.com/xdan/datetimepicker)
+- [Plugin de fenêtre modale](https://github.com/kylefox/jquery-modal)
+- [Plugin de menu déroulant](https://github.com/jquery/jquery-ui/blob/main/ui/widgets/selectmenu.js)
+- [Plugin de tables de données](https://github.com/DataTables/DataTables)
 
 
 
