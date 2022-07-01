@@ -6,6 +6,7 @@ import icoAdd from '../../assets/ico-user-add.jpg';
 import close from '../../assets/close.png';
 import './form.css';
 import Input from '../Input/Input';
+//import Dropdown from 'dropdown-gs/dist/components/Dropdown';
 import Dropdown from '../Dropdown/Dropdown';
 import Modal from 'react-modal';
 
@@ -34,10 +35,10 @@ export default function Form() {
 // MODAL
 function openModal() {
     setIsOpen(true);
-    }
+}
 
 function closeModal() {
-setIsOpen(false);
+    setIsOpen(false);
 }
 
     const customStyles = {
@@ -143,12 +144,12 @@ setIsOpen(false);
         style={customStyles}
         ariaHideApp={false}
         >
-         <button onClick={closeModal}>
+        <button onClick={closeModal}>
             <img src={close} className="modal-close" alt="close modal" />
         </button>
         <div className="modal-text">Employee Created</div><br/>
         <span className='span-icon'>👍</span>
-      </Modal>
+        </Modal>
 
       </form>
     );

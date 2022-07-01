@@ -103,6 +103,7 @@
   }
   
   .form-newEmployee--addressGroup {
+    width: 97%;
     position: absolute;
     top: -1.25rem;
     right: -1px;
