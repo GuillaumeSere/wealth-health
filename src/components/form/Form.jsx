@@ -6,8 +6,7 @@ import icoAdd from '../../assets/ico-user-add.jpg';
 import close from '../../assets/close.png';
 import './form.css';
 import Input from '../Input/Input';
-//import Dropdown from 'dropdown-gs/dist/components/Dropdown';
-import Dropdown from '../Dropdown/Dropdown';
+import Dropdown from 'dropdown-gs/dist/components/Dropdown';
 import Modal from 'react-modal';
 
 /**
