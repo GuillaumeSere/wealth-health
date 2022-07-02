@@ -28,7 +28,7 @@ Ancienne application qui utilise jQuery côté front end ce qui entraîne des bu
 
 # Plugin publié sur npm
 
-- (https://www.npmjs.com/package/dropdown-gs)
+- https://www.npmjs.com/package/dropdown-gs
 
 
 
