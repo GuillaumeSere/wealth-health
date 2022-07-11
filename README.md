@@ -26,6 +26,10 @@ Ancienne application qui utilise jQuery côté front end ce qui entraîne des bu
 - Un second repo Github contenant le code source de l'application HRnet converti en React
 - Un rapport de perfomance LightHouse de HRnet fonctionnant avant et après conversion de la biblothèque 
 
+# Plugin publié sur npm
+
+- https://www.npmjs.com/package/dropdown-gs
+
 
 
 
