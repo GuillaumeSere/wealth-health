@@ -1,9 +1,9 @@
-import React, { useMemo } from 'react';
-import { useTable, useSortBy, useGlobalFilter, usePagination } from 'react-table';
-import EMPLOYEES_LIST from '../../data/MOCK_DATA.json';
-import { TABLE_COLUMNS } from './tableColumns';
-import TableFilter from './TableFilter';
-import './table.css';
+import React, { useMemo } from "react";
+import { useTable, useSortBy, useGlobalFilter, usePagination } from "react-table";
+import EMPLOYEES_LIST from "../../data/MOCK_DATA.json";
+import { TABLE_COLUMNS } from "./tableColumns";
+import TableFilter from "./TableFilter";
+import "./table.css";
 
 /**
  * Table
@@ -12,7 +12,7 @@ import './table.css';
 export default function Table() {
   // GET DATA
   let employeesList =
-    JSON.parse(window.localStorage.getItem('employeesList')) || EMPLOYEES_LIST;
+    JSON.parse(window.localStorage.getItem("employeesList")) || EMPLOYEES_LIST;
 
   // useMEMO HOOK to avoid re-rendering until the data changes
   const columns = useMemo(() => TABLE_COLUMNS, []);
@@ -61,8 +61,8 @@ export default function Table() {
             tabIndex="0"
             {...column.getHeaderProps(column.getSortByToggleProps())}
           >
-            {column.render('Header')}
-            <span className='table-main--sorter' >
+            {column.render("Header")}
+            <span className="table-main--sorter" >
               {column.isSorted ? (
                 column.isSortedDesc ? (
                   <button
@@ -105,7 +105,7 @@ export default function Table() {
         {row.cells.map((cell) => {
           return (
             <td tabIndex="0" {...cell.getCellProps()}>
-              {cell.render('Cell')}
+              {cell.render("Cell")}
             </td>
           );
         })}

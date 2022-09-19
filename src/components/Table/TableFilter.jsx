@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { useAsyncDebounce } from 'react-table';
-import searchIcon from '../../assets/ico-search.svg';
-import PropTypes from 'prop-types';
+import React, { useState } from "react";
+import { useAsyncDebounce } from "react-table";
+import searchIcon from "../../assets/ico-search.svg";
+import PropTypes from "prop-types";
 
 /**
  * TableFilter

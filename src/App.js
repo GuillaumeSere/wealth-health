@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
-import Employees from './pages/employees/Employees';
-import Error from './pages/error/Error';
-import Home from './pages/home/Home';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Employees from "./pages/employees/Employees";
+import Error from "./pages/error/Error";
+import Home from "./pages/home/Home";
 
 /**
  * App
@@ -11,7 +11,7 @@ import Home from './pages/home/Home';
  */
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Navbar />
         <Routes>
             <Route path="/" element={<Home />} />

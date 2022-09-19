@@ -1,16 +1,16 @@
-import React from 'react';
-import './navbar.css';
-import { NavLink } from 'react-router-dom';
-import logo from '../../assets/logo.png';
-import logoBrand from '../../assets/HRnet_logo-brand.jpg';
-import icoList from '../../assets/ico-list.png';
-import icoAdd from '../../assets/User-add-05.png';
+import React from "react";
+import "./navbar.css";
+import { NavLink } from "react-router-dom";
+import logo from "../../assets/logo.png";
+import logoBrand from "../../assets/HRnet_logo-brand.jpg";
+import icoList from "../../assets/ico-list.png";
+import icoAdd from "../../assets/User-add-05.png";
 
 
 const Navbar = () => {
     return (
         <>
-      <nav aria-labelledby='nav-title'>
+      <nav aria-labelledby="nav-title">
         <div tabIndex="0" aria-label="Wealth Health logo" className="nav-item nav-brand">
           <img
             className="nav-logo"
@@ -24,7 +24,7 @@ const Navbar = () => {
           />
         </div>
         <div className="nav-item nav-menu">
-          <h1 tabIndex="0" id='nav-title' className="nav-menu--title">HRnet Employees</h1>
+          <h1 tabIndex="0" id="nav-title" className="nav-menu--title">HRnet Employees</h1>
           <NavLink to="/employees" className="nav-menu--choice">
             <img
               className="nav-ico"

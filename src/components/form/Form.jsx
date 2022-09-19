@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import INPUT_DATA from '../../data/INPUT_DATA.json';
-import DROPDOWN_DATA from '../../data/DROPDOWN_DATA.json';
-import EMPLOYEES_LIST from '../../data/MOCK_DATA.json';
-import icoAdd from '../../assets/ico-user-add.jpg';
-import close from '../../assets/close.png';
-import './form.css';
-import Input from '../Input/Input';
-import Dropdown from 'dropdown-gs/dist/components/Dropdown';
-import Modal from 'react-modal';
+import React, { useState } from "react";
+import INPUT_DATA from "../../data/INPUT_DATA.json";
+import DROPDOWN_DATA from "../../data/DROPDOWN_DATA.json";
+import EMPLOYEES_LIST from "../../data/MOCK_DATA.json";
+import icoAdd from "../../assets/ico-user-add.jpg";
+import close from "../../assets/close.png";
+import "./form.css";
+import Input from "../Input/Input";
+import Dropdown from "dropdown-gs/dist/components/Dropdown";
+import Modal from "react-modal";
 
 /**
  * Form
@@ -16,15 +16,15 @@ import Modal from 'react-modal';
 export default function Form() {
 
     const initialState = {
-        firstName: '',
-        lastName: '',
-        dateOfBirth: '',
-        street: '',
-        city: '',
-        zipCode: '',
-        stateAbbrev: '',
-        startDate: '',
-        department: '',
+        firstName: "",
+        lastName: "",
+        dateOfBirth: "",
+        street: "",
+        city: "",
+        zipCode: "",
+        stateAbbrev: "",
+        startDate: "",
+        department: "",
       };
 
     const [newEmployee, setNewEmployee] = useState(initialState);
@@ -42,19 +42,18 @@ function closeModal() {
 
     const customStyles = {
     content: {
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        width: '400px',
-        height: '300px',
-        background: '#f2f2f2',
-        marginRight: '-50%',
-        border: 'none',
-        transform: 'translate(-50%, -50%)',
-        boxShadow: '0 0 0 1.5px var(--dark)',
-    },
-    };  
+        top: "50%",
+        left: "50%",
+        right: "auto",
+        bottom: "auto",
+        width: "400px",
+        height: "300px",
+        background: "#f2f2f2",
+        marginRight: "-50%",
+        border: "none",
+        transform: "translate(-50%, -50%)",
+        boxShadow: "0 0 0 1.5px var(--dark)",
+    }};  
      
     
   // ON CHANGE
@@ -64,7 +63,7 @@ function closeModal() {
 
   // GET DATA
   let employeesList =
-    JSON.parse(window.localStorage.getItem('employeesList')) || EMPLOYEES_LIST;
+    JSON.parse(window.localStorage.getItem("employeesList")) || EMPLOYEES_LIST;
 
   // ON SUBMIT
   const handleSubmit = (e) => {
@@ -76,11 +75,11 @@ function closeModal() {
 
     // complete / correct data
     newEmployee.id = employeesList.length;
-    newEmployee.dateOfBirth = newEmployee.dateOfBirth.replace(/-/g, '/');
-    newEmployee.startDate = newEmployee.startDate.replace(/-/g, '/');
+    newEmployee.dateOfBirth = newEmployee.dateOfBirth.replace(/-/g, "/");
+    newEmployee.startDate = newEmployee.startDate.replace(/-/g, "/");
 
     // store data
-    window.localStorage.setItem('employeesList', JSON.stringify(employeesList));
+    window.localStorage.setItem("employeesList", JSON.stringify(employeesList));
 
     // reset form
     setNewEmployee({ ...newEmployee }, e.target.reset());
@@ -147,7 +146,7 @@ function closeModal() {
             <img src={close} className="modal-close" alt="close modal" />
         </button>
         <div className="modal-text">Employee Created</div><br/>
-        <span className='span-icon'>👍</span>
+        <span className="span-icon">👍</span>
         </Modal>
 
       </form>
