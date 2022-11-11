@@ -1,17 +1,16 @@
 {
   "files": {
     "main.css": "/wealth-health/static/css/main.02b964a2.css",
-    "main.js": "/wealth-health/static/js/main.d2127870.js",
-    "static/media/HRnet_logo-brand.jpg": "/wealth-health/static/media/HRnet_logo-brand.1b126cfae2d49ac29f39.jpg",
+    "main.js": "/wealth-health/static/js/main.0f15f4e9.js",
     "static/media/ico-user-add.jpg": "/wealth-health/static/media/ico-user-add.6bc9a38949d8a07ae792.jpg",
     "static/media/User-add-05.png": "/wealth-health/static/media/User-add-05.f5c656271ae29567531c.png",
     "static/media/ico-search.svg": "/wealth-health/static/media/ico-search.635d713485f1dcfb2cb3301ad7bacc85.svg",
     "index.html": "/wealth-health/index.html",
     "main.02b964a2.css.map": "/wealth-health/static/css/main.02b964a2.css.map",
-    "main.d2127870.js.map": "/wealth-health/static/js/main.d2127870.js.map"
+    "main.0f15f4e9.js.map": "/wealth-health/static/js/main.0f15f4e9.js.map"
   },
   "entrypoints": [
     "static/css/main.02b964a2.css",
-    "static/js/main.d2127870.js"
+    "static/js/main.0f15f4e9.js"
   ]
 }
